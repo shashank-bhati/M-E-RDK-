@@ -1,10 +1,8 @@
 #include<stdio.h>
 int main(){
     char temp;
-    char s[];
-    printf("Enter the string:");
-    scanf("%s",s);
-    int len=0;
+    char s[]="Shashank Ltts";
+    int len = 0;
     while (s[len]!='\0')
     {
         len++;
@@ -16,6 +14,6 @@ int main(){
     s[i]=s[len-i-1];
     s[len-i-1] = temp;
 }
-    printf("Now the string is %s",s);
+    printf("Now the string is %s\n",s);
     return 0;
 }
